@@ -1,9 +1,22 @@
 const inquirer = require('inquirer');
-const fs = require('fs');
 
-const prompts = [
-    {
-        type: 'input',
-        name: '',
-    }
-]
+function menu(){
+    inquirer.prompt([
+        {
+            type:'list',
+            name:'choice',
+            message:'Select an option',
+            choices:[
+                {
+                    name:'View all employees',
+                    value:'VIEW_EMPLOYEES',
+                }
+            ]
+        }
+    ]).then(response => {
+        console.log(response)
+    })
+    
+}
+
+menu();
