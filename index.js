@@ -8,8 +8,30 @@ function menu(){
             message:'Select an option',
             choices:[
                 {
+                    name:'View all departments',
+                    value:'VIEW_DEPARTMENTS',
+                }
+            ]
+        },
+        {
+            type:'list',
+            name:'choice',
+            message:'Select an option',
+            choices:[
+                {
+                    name:'View all roles',
+                    value:'VIEW_ROLES'
+                }
+            ]
+        },
+        {
+            type:'list',
+            name:'choice',
+            message:'Select and option',
+            choices:[
+                {
                     name:'View all employees',
-                    value:'VIEW_EMPLOYEES',
+                    value:'VIEW_EMPLOYEES'
                 }
             ]
         }
