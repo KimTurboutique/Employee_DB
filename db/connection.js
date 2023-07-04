@@ -8,6 +8,7 @@ const db = mysql.createConnection({
     // Your MySQL password
     password: "root",
     database: "company_db",
+    port: 8889,
 });
 
 db.on("error", (err) => {
